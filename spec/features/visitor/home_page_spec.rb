@@ -12,7 +12,7 @@
 
     scenario 'Visit the Home Page' do 
         visit root_path
-        expect(page).to have_content 'Welcome'
+        expect(page).to have_content 
     end
 
 end
