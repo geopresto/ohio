@@ -1,2 +1,64 @@
-@import "bootstrap";
+@import 'bootstrap' 
+
+html body {
+    background-color: rgb(0, 0, 0);
+
+}
+
+.navbar{
+   background-color: brown
+}
+
+.logo-image{
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: -6px;
+}
+
+
+.btn {
+    color:darkorange
+}
+
+.jumbotron{
+    background-image: asset-url('Dends.jpeg');
+    background-position: center center;
+    background-size: 55%;
+	background-repeat: no-repeat; 
+}
+
+.jumboletters{
+    color:rgb(202, 72, 11)
+}
+
+.jumbotron2{
+    background-image: asset-url('GOBUcks3.jpeg');
+    background-position: center center;
+    background-size: cover; 
+	background-repeat: no-repeat; 
+}
+
+#page-content{
+    background-color: rgb(0, 0, 0);
+}
+
+.sharejumbo{
+    background-image: asset-url('GOBUcks3.jpeg');
+    background-position: center center;
+    background-size: cover; 
+	background-repeat: no-repeat; 
+}
+
+.sharejumbo2{
+    background-image: asset-url('MU2.jpeg');
+    background-position: center center;
+    background-size: cover; 
+	background-repeat: no-repeat;
+}
+
+.homebutton{
+    color: darkorange; 
+}
 
