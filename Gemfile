@@ -31,7 +31,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 
 group :development, :test do
-  gem 'sqlite'
+  gem 'pg'
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
 end
@@ -45,6 +45,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'rspec-rails'
   gem 'factory_bot_rails'
+  gem 'sqlite'
 end
 
 group :test do
@@ -55,6 +56,7 @@ group :test do
   gem 'webdrivers'
   gem 'database_cleaner'
   gem 'launchy'
+  gem 'factory_bot_rails'
 end
 
 group :production do 
