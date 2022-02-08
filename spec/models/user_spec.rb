@@ -22,7 +22,8 @@ describe User do
   end
 
   it "email address should have valid format" do 
-    user = User.new(email: "Dave@yahoo.com")
+    user = User.new(name: "Dave", email: "Dave@yahoo.com", 
+                    password: "foobar", password_confirmation: "foobar")
     valid_addresses = %w[user@example.com USER@foo.COM A_US-ER@foo.bar.org
                         first.last@foo.jp alice+bob@baz.cn]
     valid_addresses.each do |valid_address|
@@ -32,7 +33,8 @@ describe User do
   end
 
   it "invalid email addresses should be rejected" do 
-    user = User.new(email: "Dave@yahoo,com")
+    user = User.new(name: "Dave", email: "Dave@yahoo,com", 
+                    password: "foobar", password_confirmation: "foobar")
     invalid_addresses = %w[user@example,com user_at_foo.org user.name@example.
       foo@bar_baz.com foo@bar+baz.com]
     invalid_addresses.each do |invalid_address|
